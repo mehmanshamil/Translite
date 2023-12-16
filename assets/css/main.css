@@ -1,0 +1,117 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+header .container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+header .container img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+header .container p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.container .anime {
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  animation: anime 2s;
+}
+.container .anime img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+@keyframes anime {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1;
+  }
+}
+#main {
+  display: flex;
+  justify-content: center;
+}
+#main .container {
+  width: 70%;
+  display: flex;
+  border: 1px solid black;
+  height: 25rem;
+  flex-direction: column;
+  box-shadow: 0 2px 20px rgb(0, 0, 0);
+}
+#main .container .after {
+  width: 97%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#main .container .after i {
+  cursor: pointer;
+  transition: 1s;
+  margin-left: 2rem;
+}
+#main .container .after i:hover {
+  color: blue;
+}
+#main .container .after select {
+  min-width: 100px;
+  border: none;
+  cursor: pointer;
+}
+#main .container .after select option {
+  cursor: pointer;
+}
+#main .container .before {
+  display: flex;
+  position: relative;
+}
+#main .container .before textarea {
+  width: 50%;
+  height: 20.6rem;
+  display: flex;
+  padding: 20px;
+  justify-content: start;
+  border-bottom: none;
+  border-top: none;
+}
+#main .container .before textarea:nth-child(1) {
+  border-left: none;
+}
+#main .container .before textarea:nth-child(2) {
+  border-right: none;
+}
+#main .container .before .addprop {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+#main .container .before .addprop i {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#main .container .before .addprop i:hover {
+  color: #fff;
+  background-color: rgb(13, 102, 199);
+}
+#main .container .before .addprop .left {
+  width: 50%;
+  margin: 1rem;
+}
+#main .container .before .addprop .left p {
+  margin: 0;
+  padding: 0;
+}

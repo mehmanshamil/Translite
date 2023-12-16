@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+
+        }
+
+        p {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+   
+}
+.container {
+    .anime {
+      width: 50%;
+      margin: 0 auto;
+      overflow: hidden;
+      animation: anime 2s;  
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  @keyframes anime {
+    from {
+        scale: 0.7;
+    }
+    to {
+        scale: 1;
+    }
+  }
+  
+#main {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 70%;
+        display: flex;
+        border: 1px solid black;
+        height: 25rem;
+        flex-direction: column;
+        box-shadow: 0 2px 20px rgb(0, 0, 0.2);
+        .after {
+            width: 97%;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                cursor: pointer;
+                transition: 1s;
+                margin-left: 2rem;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+
+            select {
+                // width: auto;
+                // height: 1rem;
+                min-width: 100px;
+                border: none;
+                cursor: pointer;
+
+                option {
+                    cursor: pointer;
+                }
+            }
+        }
+        .before{
+            display: flex;
+            position: relative;
+            textarea{
+                width: 50%;
+                height: 20.6rem;
+                display: flex;
+                padding: 20px;
+                justify-content: start;
+                border-bottom: none;
+                border-top: none;
+                &:nth-child(1){
+                    border-left:none ;
+                }
+                &:nth-child(2){
+                border-right: none;
+                }
+            }    
+            
+            .addprop{
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                width: 100%;
+                i{
+                    cursor: pointer;
+                    padding: 15px;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #fff;
+                        background-color: rgb(13, 102, 199);
+                    }
+                }
+                .left{
+                    width: 50%;
+                    margin: 1rem;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            } 
+        }
+    }
+}
